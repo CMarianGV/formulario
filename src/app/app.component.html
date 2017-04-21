@@ -1,0 +1,37 @@
+  <form [formGroup]="formulario">
+    <div>
+      <label for="nFolio">No Folio:</label>
+      <input type="text" class="form-control" id="nFolio" formControlName="nFolio">
+    </div>
+    <div>
+      <label for="fecha">Fecha:</label>
+      <input type="date" class="form-control" id="fecha" formControlName="fecha">
+    </div>
+    <div>
+      <label for="nomResidente">Nombre del residente:</label>
+      <input type="text" class="form-control" id="nomResidente" formControlName="nomResidente">
+    </div>
+    <div>
+      <label for="carrera">Carrera:</label>
+      <input type="text" class="form-control" id="carrera" formControlName="carrera">
+    </div>
+    <div>
+      <label for="nomProyecto">Nombre del proyecto:</label>
+      <input type="text" class="form-control" id="nomProyecto" formControlName="nomProyecto">
+    </div>
+    <div>
+      <label for="periodoRealizacion">Periodo de realización:</label>
+      <input type="text" class="form-control" id="periodoRealizacion" formControlName="periodoRealizacion">
+    </div>
+    <div>
+      <label for="empresa">Empresa:</label>
+      <input type="text" class="form-control" id="empresa" formControlName="empresa">
+    </div>
+    <div>
+      <label for="departamento">Departamento:</label>
+      <input type="text" class="form-control" id="departamento" formControlName="departamento">
+    </div>
+    <button (click)="generarPDF()">PDF</button>
+  </form>
+
+FORMULARIO: {{ formulario.value | json}}
